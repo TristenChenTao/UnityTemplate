@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using cn.sharesdk.unity3d;
-using UnityEngine.UI;  
+using FairyGUI;
+using UnityEngine.SceneManagement;
 
 public class MainScene : MonoBehaviour {
 
@@ -11,7 +12,33 @@ public class MainScene : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		ssdk = gameObject.GetComponent<ShareSDK>();
-        ssdk.authHandler = AuthResultHandler; 
+        ssdk.authHandler = AuthResultHandler;
+
+        GRoot.inst.SetContentScaleFactor(1080, 1920, UIContentScaler.ScreenMatchMode.MatchWidthOrHeight);               
+        UIPackage.AddPackage("UI/Login");           
+        GComponent view = UIPackage.CreateObject("Login", "LoginPage").asCom; 
+ 
+        view.SetSize(GRoot.inst.width,GRoot.inst.height);
+        view.AddRelation(GRoot.inst, RelationType.Size);
+        GRoot.inst.AddChild(view);  
+
+        GButton wechatButton = view.GetChild("wechatButton").asButton;
+        wechatButton.onClick.Add(() => {
+            ssdk.Authorize(PlatformType.WeChat);
+        });
+
+        GButton qqButton = view.GetChild("QQButton").asButton;
+        qqButton.onClick.Add(() => {
+            ssdk.Authorize(PlatformType.QQ);
+
+        });
+
+
+        GButton weiboButton = view.GetChild("sinaButton").asButton;
+        weiboButton.onClick.Add(() => {
+            // ssdk.Authorize(PlatformType.SinaWeibo);
+            // SceneManager.LoadScene("Index");
+        }); 
 	}
 
     public void Login(){

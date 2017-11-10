@@ -1,0 +1,27 @@
+-- local breakSocketHandle,debugXpCall = require("Lua/LuaDebug")("192.168.1.102",7003)    -- ip 适用于 win mac 移动设备
+local breakSocketHandle,debugXpCall = require("/Assets/Resources/Lua/LuaDebug")("localhost",7003)  --本机调试 win mac
+
+function start()
+	print("rankscene lua start...")
+
+	CS.FairyGUI.GRoot.inst:SetContentScaleFactor(1080, 1920, CS.FairyGUI.UIContentScaler.ScreenMatchMode.MatchWidthOrHeight);               
+    CS.FairyGUI.UIPackage.AddPackage("UI/Rank");     
+    view = CS.FairyGUI.UIPackage.CreateObject("Rank", "RankPage")
+    view:SetSize(CS.FairyGUI.GRoot.inst.width,CS.FairyGUI.GRoot.inst.height)
+    view:AddRelation(CS.FairyGUI.GRoot.inst, CS.FairyGUI.RelationType.Size)
+    CS.FairyGUI.GRoot.inst:AddChild(view)
+
+end
+
+function update()
+
+end
+
+function ondestroy()
+    print("lua destroy")
+end
+
+function RankOnClick()
+	
+end
+

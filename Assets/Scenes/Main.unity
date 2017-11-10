@@ -112,174 +112,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &81742688
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 81742689}
-  - component: {fileID: 81742691}
-  - component: {fileID: 81742690}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &81742689
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 81742688}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1748031880}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &81742690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 81742688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "\u5FAE\u4FE1\u767B\u5F55"
---- !u!222 &81742691
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 81742688}
---- !u!1 &459761353
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 459761357}
-  - component: {fileID: 459761356}
-  - component: {fileID: 459761355}
-  - component: {fileID: 459761354}
-  m_Layer: 5
-  m_Name: Canvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &459761354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 459761353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &459761355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 459761353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
---- !u!223 &459761356
-Canvas:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 459761353}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
---- !u!224 &459761357
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 459761353}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 416, y: 260, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1748031880}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1322058144
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,7 +126,6 @@ GameObject:
   - component: {fileID: 1322058150}
   - component: {fileID: 1322058149}
   - component: {fileID: 1322058151}
-  - component: {fileID: 1322058152}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -391,213 +222,211 @@ MonoBehaviour:
   devInfo:
     sinaweibo:
       Enable: 1
-      SortId: 4
-      AppKey: 3598852792
-      AppSecret: 846459e2587c6bee4e830c85023feab8
-      RedirectUrl: http://www.esgame.com
-      ShareByWebApi: 1
-      ShareByAppClient: 0
+      app_key: 3598852792
+      app_secret: 846459e2587c6bee4e830c85023feab8
+      redirect_uri: http://www.esgame.com
+      auth_type: both
     tencentweibo:
       Enable: 1
-      SortId: 3
-      AppKey: 801307650
-      AppSecret: ae36f4ee3946e1cbb98d6965b0b2ff5c
-      RedirectUri: http://sharesdk.cn
+      app_key: 801307650
+      app_secret: ae36f4ee3946e1cbb98d6965b0b2ff5c
+      redirect_uri: http://sharesdk.cn
     facebook:
       Enable: 1
-      SortId: 8
-      ConsumerKey: 1412473428822331
-      ConsumerSecret: a42f4f3f867dc947b9ed6020c2e93558
-      RedirectUrl: https://mob.com/
-      ShareByAppClient: 0
+      api_key: 107704292745179
+      app_secret: 38053202e1a5fe26c80c753071f0b573
+      auth_type: both
+      display_name: ShareSDK
     twitter:
       Enable: 1
-      SortId: 9
-      ConsumerKey: LRBM0H75rWrU9gNHvlEAA2aOy
-      ConsumerSecret: gbeWsZvA9ELJSdoBzJ5oLKX0TU09UOwrzdGfo9Tg7DjyGuMe8G
-      CallbackUrl: http://mob.com
+      consumer_key: LRBM0H75rWrU9gNHvlEAA2aOy
+      consumer_secret: gbeWsZvA9ELJSdoBzJ5oLKX0TU09UOwrzdGfo9Tg7DjyGuMe8G
+      redirect_uri: http://mob.com
     email:
       Enable: 1
-      SortId: 12
     shortMessage:
       Enable: 1
-      SortId: 13
     douban:
       Enable: 1
-      SortId: 14
-      ApiKey: 02e2cbe5ca06de5908a863b15e149b0b
-      Secret: 9f1e7b4f71304f2f
-      RedirectUri: http://www.sharesdk.cn
+      api_key: 02e2cbe5ca06de5908a863b15e149b0b
+      secret: 9f1e7b4f71304f2f
+      redirect_uri: http://www.sharesdk.cn
     renren:
       Enable: 1
-      SortId: 10
-      AppId: 226427
-      ApiKey: fc5b8aed373c4c27a05b712acba0f8c3
-      SecretKey: f29df781abdd4f49beca5a2194676ca4
+      app_id: 226427
+      app_key: fc5b8aed373c4c27a05b712acba0f8c3
+      secret_key: f29df781abdd4f49beca5a2194676ca4
+      auth_type: both
     googlePlus:
       Enable: 1
-      SortId: 19
-      ClientID: 682795613743-cfo3a8r4va0ujja7qofr54hobt2kv3cq.apps.googleusercontent.com
-      RedirectUrl: http://localhost
-      ShareByAppClient: 0
+      client_id: 232554794995.apps.googleusercontent.com
+      client_secret: PEdFgtrMw97aCvf0joQj7EMk
+      redirect_uri: http://localhost
+      auth_type: both
     kaiXin:
       Enable: 1
-      SortId: 11
-      AppKey: 358443394194887cee81ff5890870c7c
-      AppSecret: da32179d859c016169f66d90b6db2a23
-      RedirectUri: http://www.sharesdk.cn
+      api_key: 358443394194887cee81ff5890870c7c
+      secret_key: da32179d859c016169f66d90b6db2a23
+      redirect_uri: http://www.sharesdk.cn
     pocket:
       Enable: 1
-      SortId: 35
-      ConsumerKey: 32741-389c565043c49947ba7edf05
+      consumer_key: 11496-de7c8c5eb25b2c9fcdc2b627
+      redirect_uri: pocketapp1234
+      auth_type: both
     instagram:
       Enable: 1
-      SortId: 26
-      ClientId: ff68e3216b4f4f989121aa1c2962d058
-      ClientSecret: 1b2e82f110264869b3505c3fe34e31a1
-      RedirectUri: http://sharesdk.cn
+      client_id: ff68e3216b4f4f989121aa1c2962d058
+      client_secret: 1b2e82f110264869b3505c3fe34e31a1
+      redirect_uri: http://sharesdk.cn
     linkedIn:
       Enable: 1
-      SortId: 18
-      ApiKey: ejo5ibkye3vo
-      SecretKey: cC7B2jpxITqPLZ5M
-      RedirectUrl: http://sharesdk.cn
+      api_key: ejo5ibkye3vo
+      secret_key: cC7B2jpxITqPLZ5M
+      redirect_url: http://sharesdk.cn
     tumblr:
       Enable: 1
-      SortId: 23
-      OAuthConsumerKey: 2QUXqO9fcgGdtGG1FcvML6ZunIQzAEL8xY6hIaxdJnDti2DYwM
-      SecretKey: 3Rt0sPFj7u2g39mEVB3IBpOzKnM3JnTtxX2bao2JKk4VV1gtNo
-      CallbackUrl: http://sharesdk.cn
+      consumer_key: 2QUXqO9fcgGdtGG1FcvML6ZunIQzAEL8xY6hIaxdJnDti2DYwM
+      consumer_secret: 3Rt0sPFj7u2g39mEVB3IBpOzKnM3JnTtxX2bao2JKk4VV1gtNo
+      callback_url: http://sharesdk.cn
     youDao:
       Enable: 1
-      SortId: 15
-      HostType: product
-      ConsumerKey: dcde25dca105bcc36884ed4534dab940
-      ConsumerSecret: d98217b4020e7f1874263795f44838fe
-      RedirectUri: http://www.sharesdk.cn/
+      consumer_key: dcde25dca105bcc36884ed4534dab940
+      consumer_secret: d98217b4020e7f1874263795f44838fe
+      oauth_callback: http://www.sharesdk.cn/
     flickr:
       Enable: 1
-      SortId: 22
-      ApiKey: 33d833ee6b6fca49943363282dd313dd
-      ApiSecret: 3a2c5b42a8fbb8bb
-      RedirectUri: http://www.sharesdk.cn
+      api_key: 33d833ee6b6fca49943363282dd313dd
+      api_secret: 3a2c5b42a8fbb8bb
     evernote:
       Enable: 1
-      SortId: 17
-      ConsumerKey: sharesdk-7807
-      ConsumerSecret: d05bf86993836004
-      ShareByAppClient: 0
+      consumer_key: sharesdk-7807
+      consumer_secret: d05bf86993836004
+      isSandBox: 1
     whatsApp:
       Enable: 1
-      SortId: 33
     line:
       Enable: 1
-      SortId: 30
     dropbox:
       Enable: 1
-      SortId: 24
-      AppKey: 7janx53ilz11gbs
-      AppSecret: c1hpx5fz6tzkm32
+      app_key: i5vw2mex1zcgjcj
+      app_secret: 3i9xifsgb4omr0s
+      oauth_callback: https://www.sharesdk.cn
     vkontakte:
       Enable: 1
-      SortId: 25
-      ApplicationId: 3921561
+      application_id: 3921561
+      secret_key: 6Qf883ukLDyz4OBepYF1
+      auth_type: both
     pinterest:
       Enable: 1
-      SortId: 21
-      ClientId: 1432928
+      client_id: 4797078908495202393
     mingdao:
       Enable: 1
-      SortId: 29
-      AppKey: EEEE9578D1D431D3215D8C21BF5357E3
-      AppSecret: 5EDE59F37B3EFA8F65EEFB9976A4E933
-      RedirectUri: http://sharesdk.cn
+      app_key: EEEE9578D1D431D3215D8C21BF5357E3
+      app_secret: 5EDE59F37B3EFA8F65EEFB9976A4E933
+      redirect_uri: http://sharesdk.cn
     kakaoTalk:
       Enable: 1
-      SortId: 31
+      app_key: 48d3f524e4a636b08d81b3ceb50f1003
+      rest_api_key: ac360fa50b5002637590d24108e6cb10
+      redirect_uri: http://www.mob.com/oauth
+      auth_type: both
     kakaoStory:
       Enable: 1
-      SortId: 32
+      app_key: 48d3f524e4a636b08d81b3ceb50f1003
+      rest_api_key: ac360fa50b5002637590d24108e6cb10
+      redirect_uri: http://www.mob.com/oauth
+      auth_type: both
     qq:
       Enable: 1
-      SortId: 2
-      AppId: 1106077617
-      AppKey: VFvdCWAPCSGdT53e
-      ShareByAppClient: 1
+      app_id: 1106077617
+      app_key: VFvdCWAPCSGdT53e
+      auth_type: both
     qzone:
       Enable: 1
-      SortId: 1
-      AppId: 1106077617
-      AppKey: ae36f4ee3946e1cbb98d6965b0b2ff5c
-      ShareByAppClient: 1
+      app_id: 1106077617
+      app_key: VFvdCWAPCSGdT53e
+      auth_type: both
     wechat:
       Enable: 1
-      SortId: 5
-      AppId: wx8c2e4c0409bdbd61
-      AppSecret: 103664fad9bb6b2d4d819b9e9b1d287e
-      userName: gh_afb25ac019c9@app
-      path: /page/API/pages/share/share
-      BypassApproval: 1
+      app_id: wx8c2e4c0409bdbd61
+      app_secret: 103664fad9bb6b2d4d819b9e9b1d287e
     wechatMoments:
       Enable: 1
-      SortId: 6
-      AppId: wx8c2e4c0409bdbd61
-      AppSecret: 103664fad9bb6b2d4d819b9e9b1d287e
-      BypassApproval: 0
+      app_id: wx8c2e4c0409bdbd61
+      app_secret: 103664fad9bb6b2d4d819b9e9b1d287e
     wechatFavorites:
       Enable: 1
-      SortId: 7
-      AppId: wx8c2e4c0409bdbd61
-      AppSecret: 103664fad9bb6b2d4d819b9e9b1d287e
+      app_id: wx8c2e4c0409bdbd61
+      app_secret: 103664fad9bb6b2d4d819b9e9b1d287e
     yixin:
       Enable: 1
-      SortId: 27
-      AppId: yx0d9a9f9088ea44d78680f3274da1765f
-      BypassApproval: 1
+      app_id: yx0d9a9f9088ea44d78680f3274da1765f
+      app_secret: 1a5bd421ae089c3
+      redirect_uri: https://open.yixin.im/resource/oauth2_callback.html
+      auth_type: both
     yixinMoments:
       Enable: 1
-      SortId: 28
-      AppId: yx0d9a9f9088ea44d78680f3274da1765f
-      BypassApproval: 1
+      app_id: yx0d9a9f9088ea44d78680f3274da1765f
+      app_secret: 1a5bd421ae089c3
+      redirect_uri: https://open.yixin.im/resource/oauth2_callback.html
+      auth_type: both
     facebookMessenger:
       Enable: 1
-      SortId: 37
-      ConsumerKey: 107704292745179
-      ConsumerSecret: 38053202e1a5fe26c80c753071f0b573
-      RedirectUrl: http://mob.com
     instapaper:
       Enable: 1
-      SortId: 36
-      ConsumerKey: 4rDJORmcOcSAZL1YpqGHRI605xUvrLbOhkJ07yO0wWrYrc61FA
-      ConsumerSecret: GNr1GespOQbrm8nvd7rlUsyRQsIo3boIbMguAl9gfpdL0aKZWe
+      consumer_key: 4rDJORmcOcSAZL1YpqGHRI605xUvrLbOhkJ07yO0wWrYrc61FA
+      consumer_secret: GNr1GespOQbrm8nvd7rlUsyRQsIo3boIbMguAl9gfpdL0aKZWe
     aliSocial:
       Enable: 1
-      SortId: 50
-      AppId: 2015072400185895
+      app_id: 2015072400185895
     aliSocialMoments:
       Enable: 1
-      SortId: 51
-      AppId: 2015072400185895
+      app_id: 2015072400185895
     dingTalk:
       Enable: 1
+      app_id: dingoanxyrpiscaovl4qlw
     youtube:
       Enable: 1
-      SortId: 53
-      ClientID: 370141748022-bicrnsjfiije93bvdt63dh3728m4shas.apps.googleusercontent.com
-      RedirectUrl: http://localhost
-      ShareByAppClient: true
+      client_id: 906418427202-jinnbqal1niq4s8isbg2ofsqc5ddkcgr.apps.googleusercontent.com
+      client_secret: 
+      redirect_uri: http://localhost
     meiPai:
       Enable: 1
-      SortId: 54
-      ClientID: 1089867596
-      RedirectUrl: http://localhost
-      ShareByAppClient: true
-    fourSquare:
+      app_key: 1089867596
+    copy:
       Enable: 1
-      SortId: 20
-      ClientID: G0ZI20FM30SJAJTX2RIBGD05QV1NE2KVIM2SPXML2XUJNXEU
-      ClientSecret: 3XHQNSMMHIFBYOLWEPONNV4DOTCDBQH0AEMVGCBG0MZ32XNU
-      RedirectUrl: http://www.sharesdk.cn
+    yixinFavorites:
+      Enable: 1
+      app_id: yx0d9a9f9088ea44d78680f3274da1765f
+      app_secret: 1a5bd421ae089c3
+      redirect_uri: https://open.yixin.im/resource/oauth2_callback.html
+      auth_type: both
+    yixinSeries:
+      Enable: 1
+      app_id: yx0d9a9f9088ea44d78680f3274da1765f
+      app_secret: 1a5bd421ae089c3
+      redirect_uri: https://open.yixin.im/resource/oauth2_callback.html
+      auth_type: both
+    wechatSeries:
+      Enable: 1
+      app_id: wx8c2e4c0409bdbd61
+      app_secret: 103664fad9bb6b2d4d819b9e9b1d287e
+    qqSeries:
+      Enable: 1
+      app_id: 1106077617
+      app_key: VFvdCWAPCSGdT53e
+      auth_type: both
+    kakaoSeries:
+      Enable: 1
+      app_key: 48d3f524e4a636b08d81b3ceb50f1003
+      rest_api_key: ac360fa50b5002637590d24108e6cb10
+      redirect_uri: http://www.mob.com/oauth
+      auth_type: both
+    evernoteInternational:
+      Enable: 1
+      consumer_key: sharesdk-7807
+      consumer_secret: d05bf86993836004
+      isSandBox: 0
 --- !u!114 &1322058151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -609,201 +438,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e112c9740175b4534b8db4765f070afc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1322058152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1322058144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e112c9740175b4534b8db4765f070afc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1532226111
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1532226114}
-  - component: {fileID: 1532226113}
-  - component: {fileID: 1532226112}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1532226112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1532226111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
---- !u!114 &1532226113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1532226111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 5
---- !u!4 &1532226114
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1532226111}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1748031879
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1748031880}
-  - component: {fileID: 1748031883}
-  - component: {fileID: 1748031882}
-  - component: {fileID: 1748031881}
-  m_Layer: 5
-  m_Name: Button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1748031880
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1748031879}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 81742689}
-  m_Father: {fileID: 459761357}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 500}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1748031881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1748031879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1748031882}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1322058151}
-        m_MethodName: Login
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &1748031882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1748031879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1748031883
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1748031879}
 --- !u!1 &1757425779
 GameObject:
   m_ObjectHideFlags: 0
