@@ -6,6 +6,9 @@ using cn.sharesdk.unity3d;
 using FairyGUI;
 using UnityEngine.SceneManagement;
 
+using BestHTTP;
+using System;
+
 public class MainScene : MonoBehaviour {
 
 	private ShareSDK ssdk;
@@ -39,7 +42,56 @@ public class MainScene : MonoBehaviour {
             // ssdk.Authorize(PlatformType.SinaWeibo);
             // SceneManager.LoadScene("Index");
         }); 
+
+        testBestHTTP();
+
 	}
+
+    void testBestHTTP() {
+        HTTPRequest request = new HTTPRequest(new Uri("http://www.baidu.com"), (req, resp) =>
+            {
+                switch (req.State)
+                {
+                    case HTTPRequestStates.Processing:
+                        print("HTTPRequestStates.Processing");
+                        break;
+
+                    case HTTPRequestStates.Finished:
+                        if (resp.IsSuccess)
+                        {
+                            print("HTTPRequestStates.Success");
+                        }
+                        else 
+                        {
+                            print("HTTPRequestStates.Fail");
+                            request = null;
+                        }
+                        break;
+
+                    case HTTPRequestStates.Error:
+                        print("HTTPRequestStates.Error");
+                        request = null;
+                        break;
+
+                    case HTTPRequestStates.Aborted:
+                        print("HTTPRequestStates.Aborted");
+                        request = null;
+                        break;
+
+                    case HTTPRequestStates.ConnectionTimedOut:
+                        print("HTTPRequestStates.ConnectionTimedOut");
+                        request = null;
+                        break;
+
+                    case HTTPRequestStates.TimedOut:
+                        print("HTTPRequestStates.TimedOut");
+                        request = null;
+                        break;
+                }
+            });
+
+            request.Send();
+    }
 
     public void Login(){
             ssdk.Authorize(PlatformType.WeChat);
