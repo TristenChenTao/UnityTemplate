@@ -37,6 +37,9 @@ public class MainScene : MonoBehaviour {
         });
 
 
+       
+
+
         GButton weiboButton = view.GetChild("sinaButton").asButton;
         weiboButton.onClick.Add(() => {
             // ssdk.Authorize(PlatformType.SinaWeibo);
@@ -45,7 +48,17 @@ public class MainScene : MonoBehaviour {
 
         testBestHTTP();
 
+        //监听消息
+        Messenger.AddListener<int,String>( "message", receiveMessage);
+
+        //发送消息
+        Messenger.Broadcast<int,String>("message",1980,"BSBSBS");
 	}
+    
+    public void receiveMessage(int i, String s) {
+        Debug.Log("int value is " +i+" Sttring is "+s);
+    }
+
 
     void testBestHTTP() {
         HTTPRequest request = new HTTPRequest(new Uri("http://www.baidu.com"), (req, resp) =>
@@ -92,6 +105,7 @@ public class MainScene : MonoBehaviour {
 
             request.Send();
     }
+
 
     public void Login(){
             ssdk.Authorize(PlatformType.WeChat);
