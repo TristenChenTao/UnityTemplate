@@ -11,6 +11,7 @@ using System.Collections;
 using System.Collections.Generic;
 using XLua;
 using System;
+using UnityEditor;
 
 [System.Serializable]
 public class Injection
@@ -36,6 +37,9 @@ public class LuaBehaviour : MonoBehaviour {
 
     void Awake()
     {
+
+        Debug.Log(AssetDatabase.GetAssetPath(luaScript));
+
         scriptEnv = luaEnv.NewTable();
 
         LuaTable meta = luaEnv.NewTable();
@@ -49,7 +53,8 @@ public class LuaBehaviour : MonoBehaviour {
             scriptEnv.Set(injection.name, injection.value);
         }
 
-        luaEnv.DoString(luaScript.text, "LuaBehaviour", scriptEnv);
+        // luaEnv.DoString(luaScript.text, "LuaBehaviour", scriptEnv);
+        luaEnv.DoString(luaScript.text, luaScript.name, scriptEnv); //适配 luaide 调试，但要小心 lua 文件重名
 
         Action luaAwake = scriptEnv.Get<Action>("awake");
         scriptEnv.Get("start", out luaStart);
