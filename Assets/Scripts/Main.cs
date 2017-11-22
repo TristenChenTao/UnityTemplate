@@ -9,10 +9,15 @@ using UnityEngine.SceneManagement;
 using BestHTTP;
 using System;
 
-public class MainScene : MonoBehaviour {
+public class Main : MonoBehaviour {
 
 	private ShareSDK ssdk;
-	// Use this for initialization
+	
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
 	void Start () {
 		ssdk = gameObject.GetComponent<ShareSDK>();
         ssdk.authHandler = AuthResultHandler;
@@ -36,79 +41,19 @@ public class MainScene : MonoBehaviour {
 
         });
 
-
-       
-
-
         GButton weiboButton = view.GetChild("sinaButton").asButton;
         weiboButton.onClick.Add(() => {
             // ssdk.Authorize(PlatformType.SinaWeibo);
             // SceneManager.LoadScene("Index");
         }); 
 
-        testBestHTTP();
 
-        //监听消息
-        Messenger.AddListener<int,String>( "message", receiveMessage);
-
-        //发送消息
-        Messenger.Broadcast<int,String>("message",1980,"BSBSBS");
+        LuaManager.Instance.Start();
+        GameManager.Instance.Start();
 	}
-    
-    public void receiveMessage(int i, String s) {
-        Debug.Log("int value is " +i+" Sttring is "+s);
-    }
-
-
-    void testBestHTTP() {
-        HTTPRequest request = new HTTPRequest(new Uri("http://www.baidu.com"), (req, resp) =>
-            {
-                switch (req.State)
-                {
-                    case HTTPRequestStates.Processing:
-                        print("HTTPRequestStates.Processing");
-                        break;
-
-                    case HTTPRequestStates.Finished:
-                        if (resp.IsSuccess)
-                        {
-                            print("HTTPRequestStates.Success");
-                        }
-                        else 
-                        {
-                            print("HTTPRequestStates.Fail");
-                            request = null;
-                        }
-                        break;
-
-                    case HTTPRequestStates.Error:
-                        print("HTTPRequestStates.Error");
-                        request = null;
-                        break;
-
-                    case HTTPRequestStates.Aborted:
-                        print("HTTPRequestStates.Aborted");
-                        request = null;
-                        break;
-
-                    case HTTPRequestStates.ConnectionTimedOut:
-                        print("HTTPRequestStates.ConnectionTimedOut");
-                        request = null;
-                        break;
-
-                    case HTTPRequestStates.TimedOut:
-                        print("HTTPRequestStates.TimedOut");
-                        request = null;
-                        break;
-                }
-            });
-
-            request.Send();
-    }
-
 
     public void Login(){
-            ssdk.Authorize(PlatformType.WeChat);
+        ssdk.Authorize(PlatformType.WeChat);
     }
 
 	void AuthResultHandler(int reqID, ResponseState state, PlatformType type, Hashtable result)
@@ -142,6 +87,13 @@ public class MainScene : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		GameManager.Instance.Update();
+        LuaManager.Instance.Update();
 	}
+
+    void OnDestroy()
+    {
+        GameManager.Instance.Release();
+        LuaManager.Instance.Release();
+    }
 }
