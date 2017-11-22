@@ -10,6 +10,7 @@ function Main()
     view:AddRelation(root, FairyGUI.RelationType.Size)
     root:AddChild(view)
 
+
     wechatButton = view:GetChild("wechatButton")
     wechatButton.onClick:Add(function () 
         print("wechatButton click")
