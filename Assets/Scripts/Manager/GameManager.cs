@@ -30,7 +30,7 @@ public class GameManager : Singleton<GameManager>
 		CopyPastePatch.Apply();
 #endif
 		UIConfig.defaultFont = "afont";
-        GRoot.inst.SetContentScaleFactor(1152, 648, UIContentScaler.ScreenMatchMode.MatchHeight);
+        GRoot.inst.SetContentScaleFactor(AppConst.ScreenWidth, AppConst.ScreenHeight, UIContentScaler.ScreenMatchMode.MatchHeight);
 	}
 
 	void StartLuaLogic()

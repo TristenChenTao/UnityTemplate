@@ -16,4 +16,8 @@ using System.Collections.Generic;
         public const bool DebugMode = true;                        //调试模式-用于内部测试
 
         public static string luaDir = Application.dataPath + "/Lua";
-    }
+
+        public const int ScreenWidth = 1920;
+
+        public const int ScreenHeight = 1080;
+}
