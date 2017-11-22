@@ -1,14 +1,12 @@
 function Main() 
     print('Main Test')
 
-    local FairyGUI = CS.FairyGUI
-    local root = FairyGUI.GRoot.inst
-    root:SetContentScaleFactor(CS.AppConst.ScreenWidth, CS.AppConst.ScreenHeight, CS.FairyGUI.UIContentScaler.ScreenMatchMode.MatchWidthOrHeight);               
-    FairyGUI.UIPackage.AddPackage("UI/Login");     
-    view = FairyGUI.UIPackage.CreateObject("Login", "LoginPage")
-    view:SetSize(root.width,root.height)
-    view:AddRelation(root, FairyGUI.RelationType.Size)
-    root:AddChild(view)
+    CS.FairyGUI.GRoot.inst:SetContentScaleFactor(CS.AppConst.ScreenWidth, CS.AppConst.ScreenHeight, CS.FairyGUI.UIContentScaler.ScreenMatchMode.MatchWidthOrHeight);               
+    CS.FairyGUI.UIPackage.AddPackage("UI/Login");     
+    view = CS.FairyGUI.UIPackage.CreateObject("Login", "LoginPage")
+    view:SetSize(CS.FairyGUI.GRoot.inst.width,CS.FairyGUI.GRoot.inst.height)
+    view:AddRelation(CS.FairyGUI.GRoot.inst, CS.FairyGUI.RelationType.Size)
+    CS.FairyGUI.GRoot.inst:AddChild(view)
 
     wechatButton = view:GetChild("wechatButton")
     wechatButton.onClick:Add(function () 
