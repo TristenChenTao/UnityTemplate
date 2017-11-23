@@ -12,12 +12,13 @@ end
 function LoginScene:OnEnter()
   log("LoginScene:OnEnter")
   
-  --  init view
+  --初始化视图
   UIMgr.Init(LoginPanelList)
 
-  -- -- --  init crlt
+  --初始化控制器
   CtrlManager.Init(LoginCtrlList)
-  
+
+  -- 启动控制器
   CtrlManager.GetCtrl(LoginCtrlList.LoginCtrl).Start()
 end
 

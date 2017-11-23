@@ -5,7 +5,7 @@ function Prompt:ctor()
 end
 
 function Prompt:OnInitWidget()
-  -- self.wechatButton = self.mainCom:GetChild("wechatLogin")
+  self.mainJoinButton = self.mainCom:GetChild("mainJoin")
 end
 
 return Prompt

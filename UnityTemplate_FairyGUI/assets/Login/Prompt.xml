@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="400,400">
   <displayList>
-    <text id="n0_g82q" name="n0" xy="61,72" size="278,255" fontSize="30" color="#ff0000" align="center" vAlign="middle" autoSize="none" text="这是一个测试弹窗&#xA;"/>
+    <component id="n2_g82q" name="mainJoin" src="g82q5" xy="100,150">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Button title="主页进入" titleFontSize="30"/>
+    </component>
   </displayList>
 </component>

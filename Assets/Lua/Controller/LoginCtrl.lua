@@ -3,7 +3,6 @@ local LoginCtrl = class("LoginCtrl")
 local loginPanel
 
 function LoginCtrl.Start()
-  log("MainCtrl:Start")
   loginPanel = UIMgr.ShowPage(LoginPanelList.LoginPage)
 
   loginPanel.wechatButton.onClick:Add(function()
