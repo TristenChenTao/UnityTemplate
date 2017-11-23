@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 1322058145}
   - component: {fileID: 1322058150}
   - component: {fileID: 1322058149}
+  - component: {fileID: 1322058151}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -428,6 +429,17 @@ MonoBehaviour:
       ClientID: G0ZI20FM30SJAJTX2RIBGD05QV1NE2KVIM2SPXML2XUJNXEU
       ClientSecret: 3XHQNSMMHIFBYOLWEPONNV4DOTCDBQH0AEMVGCBG0MZ32XNU
       RedirectUrl: http://www.sharesdk.cn
+--- !u!114 &1322058151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1322058144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e112c9740175b4534b8db4765f070afc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1757425779
 GameObject:
   m_ObjectHideFlags: 0
