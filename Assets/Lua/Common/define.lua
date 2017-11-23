@@ -1,4 +1,3 @@
-
 CtrlNames = {
 	Prompt = "PromptCtrl",
 	Message = "MessageCtrl"
@@ -11,11 +10,14 @@ PanelNames = {
   "Main"
 }
 
-LoginPanelList= {
-  LoginLuPanel = "LoginPage"
+LoginPanelList = {
+  LoginPage = "LoginPage",
+  Prompt = "Prompt"
 }
+
 LoginCtrlList = {
-  LoginCtrl = "LoginCtrl"
+  LoginCtrl = "LoginCtrl",
+  PromptCtrl = "PromptCtrl"
 }
 
 

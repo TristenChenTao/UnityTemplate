@@ -1,12 +1,15 @@
 local LoginCtrl = class("LoginCtrl")
 
-
 local loginPanel
 
 function LoginCtrl.Start()
   log("MainCtrl:Start")
-  loginPanel = UIMgr.ShowPage(LoginPanelList.LoginLuPanel)
-  -- dengLuPanel.LoginBtn.onClick:Add(DenLuCtrl.Login)
+  loginPanel = UIMgr.ShowPage(LoginPanelList.LoginPage)
+
+  loginPanel.wechatButton.onClick:Add(function()
+    log('wechat click')
+    CtrlManager.GetCtrl(LoginCtrlList.PromptCtrl).Start()
+  end)
   -- dengLuPanel.RegisterBtn.onClick:Add(DenLuCtrl.Register)  
 end
 
@@ -15,17 +18,4 @@ end
 --  local senderName = context.sender.name
 --end
 
-function LoginCtrl.Login()
-  print("DenLuCtrl.Login")
-  print(dengLuPanel.LoginInput.text.."Login")
-  print(dengLuPanel.RegisterInput.text.."Register")
-end
-
-
-function LoginCtrl.Register()
-  print("DenLuCtrl.Register")
-  print(dengLuPanel.LoginInput.text.."Login")
-  print(dengLuPanel.RegisterInput.text.."Register")
-end
-
-return DenLuCtrl
+return LoginCtrl

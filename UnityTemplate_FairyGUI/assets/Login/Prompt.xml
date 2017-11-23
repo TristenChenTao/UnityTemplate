@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="400,400">
+  <displayList>
+    <text id="n0_g82q" name="n0" xy="61,72" size="278,255" fontSize="30" color="#ff0000" align="center" vAlign="middle" autoSize="none" text="这是一个测试弹窗&#xA;"/>
+  </displayList>
+</component>

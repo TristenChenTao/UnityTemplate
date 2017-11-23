@@ -6,9 +6,11 @@ M.pages = nil
 
 function M.Init(panelList)
   M.pages = {}
-	logWarn("UIMgr.Init----->>>");
+  logWarn("UIMgr.Init----->>>")
+  
   for k,v in pairs(panelList) do
-     M.pages[k] = require("View/"..v).new()
+    local view = require("View/"..v).new()
+     M.pages[k] = view
   end
 end
 

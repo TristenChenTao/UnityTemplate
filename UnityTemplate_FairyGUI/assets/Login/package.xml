@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="quubjn7x" jpegQuality="80" compressPNG="true">
+  <resources>
+    <component id="sjed0" name="LoginPage.xml" path="/" exported="true"/>
+    <component id="sjed2" name="微信登录.xml" path="/" exported="true"/>
+    <component id="g82q3" name="Prompt.xml" path="/" exported="true"/>
+  </resources>
+  <publish name="Login"/>
+</packageDescription>

@@ -13,10 +13,12 @@ function LoginScene:OnEnter()
   log("LoginScene:OnEnter")
   
   --  init view
-  -- UIMgr.Init(LoginPanelList)
+  UIMgr.Init(LoginPanelList)
+
   -- -- --  init crlt
-  -- CtrlManager.Init(LoginCtrlList)
-  -- CtrlManager.GetCtrl(LoginCtrlList.LoginCtrl).Start()
+  CtrlManager.Init(LoginCtrlList)
+  
+  CtrlManager.GetCtrl(LoginCtrlList.LoginCtrl).Start()
 end
 
 

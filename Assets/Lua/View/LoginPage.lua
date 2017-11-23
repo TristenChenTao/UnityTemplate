@@ -14,16 +14,8 @@ end
 ----  MyApp.enterScene("MainScene")
 --end
 
-
-
 function LoginPage:OnInitWidget()
-  -- self.LoginCom = self.mainCom:GetChild("n8")
-
-  -- self.LoginBtn = self.LoginCom:GetChild("n5")
-  -- self.LoginInput = self.LoginCom:GetChild("username")
-
-  -- self.RegisterBtn = self.LoginCom:GetChild("n6")  
-  -- self.RegisterInput = self.LoginCom:GetChild("password")
+  self.wechatButton = self.mainCom:GetChild("wechatLogin")
 end
 
-return DengLuPanel
+return LoginPage
