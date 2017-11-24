@@ -9,7 +9,7 @@ function Scene:ctor()
   Scene.super.ctor(self, uipackList)
 end
 
-function MainScene:OnEnter()
+function Scene:OnEnter()
   log("MainScene:OnEnter")
   
   UIManager.Init(MainPanelList)
