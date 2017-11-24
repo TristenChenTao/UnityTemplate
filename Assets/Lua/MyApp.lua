@@ -1,6 +1,6 @@
 require "Common/define"
 require "Common/functions"
-require "framework/init"
+require "Framework/init"
 
 -- class("MyApp")
 -- --- @class MyApp
@@ -40,7 +40,7 @@ function M.enterScene(SceneName)
      M.curScene:OnExit()
  end
  
- M.curScene = require("scenes/"..SceneName).new()
+ M.curScene = require("Scenes/"..SceneName).new()
 
 loadMgr:ReplaceScene(M.curScene.ablist, M.OnLoadFinish)
 end

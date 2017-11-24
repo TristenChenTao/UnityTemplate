@@ -1,4 +1,4 @@
-local breakSocketHandle,debugXpCall = require("framework/LuaDebug")("192.168.1.102",7003)-- ip 适用于 win mac 移动设备
+local breakSocketHandle,debugXpCall = require("Framework/LuaDebug")("192.168.1.102",7003)-- ip 适用于 win mac 移动设备
 
 function Main() 
 
