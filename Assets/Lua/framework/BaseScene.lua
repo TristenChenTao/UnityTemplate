@@ -13,7 +13,7 @@ function BaseScene:OnEnter()
 end
 
 function BaseScene:OnExit()
-  UIMgr.ClearScene()
+  UIManager.ClearScene()
 end
 
 return BaseScene 

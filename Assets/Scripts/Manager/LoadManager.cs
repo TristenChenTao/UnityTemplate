@@ -7,7 +7,7 @@ using System.Linq;
 /// <summary>
 /// 场景加载前的资源加载
 /// </summary>
-public class LoadMgr : UnitySingleton<LoadMgr>
+public class LoadManager : UnitySingleton<LoadManager>
 {
     bool startReplace = false;
     public string[] fairyGUIPackList = null;

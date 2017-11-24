@@ -4,14 +4,14 @@
 
 local M = { }
 
-CtrlManager = M;
---local this = CtrlManager;
+ControllerManager = M;
+--local this = ControllerManager;
 --local ctrlList = {};	--控制器列表--
 M.ctrlList = nil
 
 function M.Init(ctrlList)
   M.ctrlList = {}
-	logWarn("CtrlManager.Init----->>>");
+	logWarn("ControllerManager.Init----->>>");
   for k,v in pairs(ctrlList) do
      M.ctrlList[k] = require("Controller/"..v).new()
   end
@@ -21,23 +21,23 @@ function M.Init(ctrlList)
 end
 
 --添加控制器--
---function CtrlManager.AddCtrl(ctrlName, ctrlObj)
+--function ControllerManager.AddCtrl(ctrlName, ctrlObj)
 --	ctrlList[ctrlName] = ctrlObj;
 --end
 
 --获取控制器--
-function M.GetCtrl(ctrlName)
+function M.GetController(ctrlName)
 	return M.ctrlList[ctrlName];
 end
 
 --移除控制器--
---function CtrlManager.RemoveCtrl(ctrlName)
+--function ControllerManager.RemoveCtrl(ctrlName)
 --	ctrlList[ctrlName] = nil;
 --end
 
 --关闭控制器--
---function CtrlManager.Close()
---	logWarn('CtrlManager.Close---->>>');
---  CtrlManager.ctrlList = nil
+--function ControllerManager.Close()
+--	logWarn('ControllerManager.Close---->>>');
+--  ControllerManager.ctrlList = nil
 --end
 return M

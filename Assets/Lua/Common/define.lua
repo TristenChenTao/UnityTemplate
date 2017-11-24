@@ -49,7 +49,7 @@ MainCtrlList = {
 --panelMgr = LuaHelper.GetPanelManager();
 --soundMgr = LuaHelper.GetSoundManager();
 --networkMgr = LuaHelper.GetNetManager();
-loadMgr = CS.LoadMgr.Instance
+LoadManager = CS.LoadManager.Instance
 
 --WWW = UnityEngine.WWW;
 --GameObject = UnityEngine.GameObject;

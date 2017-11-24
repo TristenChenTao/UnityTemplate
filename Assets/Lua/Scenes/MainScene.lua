@@ -10,16 +10,16 @@ function MainScene:ctor()
 end
 
 function MainScene:OnEnter()
-  log("LoginScene:OnEnter")
+  log("MainScene:OnEnter")
   
   --初始化视图
-  UIMgr.Init(MainPanelList)
+  UIManager.Init(MainPanelList)
 
   -- --初始化控制器
-  CtrlManager.Init(MainCtrlList)
+  ControllerManager.Init(MainCtrlList)
 
   -- -- 启动控制器
-  CtrlManager.GetCtrl(MainCtrlList.MainCtrl).Start()
+  ControllerManager.GetController(MainCtrlList.MainCtrl).Start()
 end
 
 

@@ -5,13 +5,13 @@ local view
 function Ctrl.Start()
 
   -- 自定义部分
-  view = UIMgr.ShowPage(LoginPanelList.LoginPage)
+  view = UIManager.ShowPage(LoginPanelList.LoginPage)
 
   view.wechatButton.onClick:Add(function()
     log('wechat click')
-    CtrlManager.GetCtrl(LoginCtrlList.PromptCtrl).Start()
+    ControllerManager.GetController(LoginCtrlList.PromptCtrl).Start()
   end)
-  
+
 end
 
 return Ctrl

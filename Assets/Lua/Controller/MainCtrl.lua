@@ -3,8 +3,8 @@ local Ctrl = class("MainCtrl")
 local view
 
 function Ctrl.Start()
-  view = UIMgr.ShowPage(MainPanelList.MainPage)
+  view = UIManager.ShowPage(MainPanelList.MainPage)
 
 end
 
-return MainCtrlCtrl
+return Ctrl

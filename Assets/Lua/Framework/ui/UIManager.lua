@@ -1,12 +1,12 @@
 local M = { }
 
-UIMgr = M
+UIManager = M
 
 M.pages = nil
 
 function M.Init(panelList)
   M.pages = {}
-  logWarn("UIMgr.Init----->>>")
+  logWarn("UIManager.Init----->>>")
   
   for k,v in pairs(panelList) do
     local view = require("View/"..v).new()

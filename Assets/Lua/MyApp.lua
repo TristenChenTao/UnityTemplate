@@ -19,7 +19,7 @@ require "Framework/init"
 --     self.curScene:OnExit()
 --   end
 --   self.curScene = require("scenes/"..SceneName).new()
---   loadMgr:ReplaceScene(self.curScene.ablist, MyApp.OnLoadFinish)
+--   LoadManager:ReplaceScene(self.curScene.ablist, MyApp.OnLoadFinish)
 -- end
 
 -- function MyApp.OnLoadFinish()
@@ -42,7 +42,7 @@ function M.enterScene(SceneName)
  
  M.curScene = require("Scenes/"..SceneName).new()
 
-loadMgr:ReplaceScene(M.curScene.ablist, M.OnLoadFinish)
+ LoadManager:ReplaceScene(M.curScene.ablist, M.OnLoadFinish)
 end
 
 function M.OnLoadFinish()
