@@ -1,15 +1,15 @@
-local LoginScene = class("LoginScene", BaseScene) 
+local Scene = class("LoginScene", BaseScene) 
 
-function LoginScene:ctor()
+function Scene:ctor()
   log("LoginScene:ctor")
   
   --  加载包资源
   -- 包名不需要加 "UI/"
   local uipackList = {"Login"}
-  LoginScene.super.ctor(self, uipackList)
+  Scene.super.ctor(self, uipackList)
 end
 
-function LoginScene:OnEnter()
+function Scene:OnEnter()
   log("LoginScene:OnEnter")
   
   --初始化视图
@@ -23,4 +23,4 @@ function LoginScene:OnEnter()
 end
 
 
-return LoginScene
+return Scene
