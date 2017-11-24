@@ -1,11 +1,11 @@
-local MainPage = class("MainPage", BasePage)
+local View = class("MainPage", BasePage)
 
-function MainPage:ctor()
-  MainPage.super.ctor(self, false, "Main", "MainPage")
+function View:ctor()
+  View.super.ctor(self, false, "Main", "MainPage")
 end
 
 function MainPage:OnInitWidget()
   -- self.wechatButton = self.mainCom:GetChild("wechatLogin")
 end
 
-return MainPage
+return View

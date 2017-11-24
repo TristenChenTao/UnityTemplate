@@ -1,10 +1,10 @@
-local MainCtrl = class("MainCtrl")
+local Ctrl = class("MainCtrl")
 
-local mainPanel
+local view
 
-function MainCtrl.Start()
-  mainPanel = UIMgr.ShowPage(MainPanelList.MainPage)
+function Ctrl.Start()
+  view = UIMgr.ShowPage(MainPanelList.MainPage)
 
 end
 
-return MainCtrl
+return MainCtrlCtrl

@@ -1,20 +1,17 @@
-local LoginCtrl = class("LoginCtrl")
+local Ctrl = class("LoginCtrl")
 
-local loginPanel
+local view
 
-function LoginCtrl.Start()
-  loginPanel = UIMgr.ShowPage(LoginPanelList.LoginPage)
+function Ctrl.Start()
 
-  loginPanel.wechatButton.onClick:Add(function()
+  -- 自定义部分
+  view = UIMgr.ShowPage(LoginPanelList.LoginPage)
+
+  view.wechatButton.onClick:Add(function()
     log('wechat click')
     CtrlManager.GetCtrl(LoginCtrlList.PromptCtrl).Start()
   end)
-  -- dengLuPanel.RegisterBtn.onClick:Add(DenLuCtrl.Register)  
+  
 end
 
---function DenLuCtrl.Handle(context)
---  log('you OnClick_Arg'..context.sender.name)
---  local senderName = context.sender.name
---end
-
-return LoginCtrl
+return Ctrl

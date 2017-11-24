@@ -1,21 +1,11 @@
-local LoginPage = class("LoginPage", BasePage)
+local View = class("LoginPage", BasePage)
 
-function LoginPage:ctor()
-  LoginPage.super.ctor(self, false, "Login", "LoginPage")
+function View:ctor()
+  View.super.ctor(self, false, "Login", "LoginPage")
 end
 
-
---function DengLuPanel.OnClick()
---  log('you click')
---end
-
---function DengLuPanel:OnClick_Arg(context)
---	log('you OnClick_Arg'..context.sender.name)
-----  MyApp.enterScene("MainScene")
---end
-
-function LoginPage:OnInitWidget()
+function View:OnInitWidget()
   self.wechatButton = self.mainCom:GetChild("wechatLogin")
 end
 
-return LoginPage
+return View

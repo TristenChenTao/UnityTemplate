@@ -1,11 +1,11 @@
-local PromptCtrl = class("PromptCtrl")
+local Ctrl = class("PromptCtrl")
 
-local prompt
+local view
 
-function PromptCtrl.Start()
-  prompt = UIMgr.ShowPage(LoginPanelList.Prompt)
+function Ctrl.Start()
+  view = UIMgr.ShowPage(LoginPanelList.Prompt)
 
-  prompt.mainJoinButton.onClick:Add(function()
+  view.mainJoinButton.onClick:Add(function()
     log('mainJoinButton click')
 
     MyApp.enterScene("MainScene")
@@ -13,4 +13,4 @@ function PromptCtrl.Start()
  
 end
 
-return PromptCtrl
+return Ctrl
