@@ -21,6 +21,15 @@ LoginCtrlList = {
 }
 
 
+MainPanelList = {
+  MainPage = "MainPage"
+}
+
+MainCtrlList = {
+  MainCtrl = "MainCtrl"
+}
+
+
 --协议类型--
 --ProtocalType = {
 --	BINARY = 0,

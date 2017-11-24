@@ -7,6 +7,8 @@ function PromptCtrl.Start()
 
   prompt.mainJoinButton.onClick:Add(function()
     log('mainJoinButton click')
+
+    MyApp.enterScene("MainScene")
   end)
  
 end
