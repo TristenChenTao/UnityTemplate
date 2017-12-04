@@ -1,5 +1,7 @@
+---@class MainCtrl
 local Ctrl = class("MainCtrl")
 
+---@type MainPage
 local view
 
 function Ctrl.Start()

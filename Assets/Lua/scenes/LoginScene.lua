@@ -1,4 +1,5 @@
-local Scene = class("LoginScene", BaseScene) 
+---@class LoginScene : BaseScene
+local Scene = class("LoginScene", BaseScene)
 
 function Scene:ctor()
   log("LoginScene:ctor")

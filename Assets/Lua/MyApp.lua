@@ -27,6 +27,8 @@ require "Framework/init"
 --   MyApp.Instance.curScene:OnEnter()
 -- end
 
+---@class MyApp
+---@field curScene
 local M = {}
 MyApp = M
 M.curScene = nil

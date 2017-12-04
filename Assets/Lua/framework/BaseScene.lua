@@ -1,6 +1,8 @@
-class("BaseScene")
 ---@class BaseScene
----@field public ablist string
+---@field ablist
+
+local BaseScene = class("BaseScene")
+
 function BaseScene:ctor(uipackList)
   self.ablist = ""
   for i, PanelName in ipairs(uipackList) do
@@ -16,4 +18,5 @@ function BaseScene:OnExit()
   UIManager.ClearScene()
 end
 
+---@return BaseScene
 return BaseScene 

@@ -1,3 +1,4 @@
+---@class Prompt : BasePage
 local View = class("Prompt", BasePage)
 
 function View:ctor()

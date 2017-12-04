@@ -1,5 +1,7 @@
+---@class PromptCtrl
 local Ctrl = class("PromptCtrl")
 
+---@type Prompt
 local view
 
 function Ctrl.Start()

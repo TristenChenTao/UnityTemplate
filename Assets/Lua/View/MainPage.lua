@@ -1,3 +1,4 @@
+---@class MainPage : BasePage
 local View = class("MainPage", BasePage)
 
 function View:ctor()
@@ -5,7 +6,7 @@ function View:ctor()
 end
 
 function MainPage:OnInitWidget()
-  -- self.wechatButton = self.mainCom:GetChild("wechatLogin")
+
 end
 
 return View

@@ -1,6 +1,13 @@
+---@class BasePage
+---@field public mainCom
+---@field public mResident
+---@field public pkgPath
+---@field public mainPath
 local BasePage = class("BasePage")
 
+
 function BasePage:ctor(mResident, pkgPath, mainPath)
+
   self.mainCom = nil
   self.mResident = mResident
   self.pkgPath = pkgPath

@@ -2,6 +2,8 @@
 --require "Controller/PromptCtrl"
 --require "Controller/MessageCtrl"
 
+---@class ControllerManager
+---@field ctrlList
 local M = { }
 
 ControllerManager = M;

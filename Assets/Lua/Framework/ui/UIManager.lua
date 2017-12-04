@@ -1,6 +1,9 @@
+---@class UIManager
+---@field pages
 local M = { }
 
 UIManager = M
+
 
 M.pages = nil
 

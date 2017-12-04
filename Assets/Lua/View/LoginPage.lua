@@ -1,3 +1,4 @@
+---@class LoginPage : BasePage
 local View = class("LoginPage", BasePage)
 
 function View:ctor()
